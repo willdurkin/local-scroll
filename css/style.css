@@ -1,17 +1,16 @@
-#wrapper {
-	width: 1200px;
-	height: 750px;
+html, body {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-#left-rail {
-	width: 300px;
-	height: 702px;
-	background-color: blue;
-	float: left;
-}
+
 
 #content {
-	margin-left: 50px;
+	
+	
 	width: 722px;
 	height: 702px;
 	overflow: hidden;
@@ -21,6 +20,8 @@
 .row {
 	width: 10000px;
 	height: 760px;
+	display: flex;
+	flex-direction: row;
 }
 
 .slide {
@@ -28,5 +29,4 @@
 	height: 700px;
 	border: black 1px solid;
 	margin-right: 40px;
-	float: left;
 }
