@@ -1,0 +1,35 @@
+html, body {
+	height: 100%;
+}
+
+/*#left-rail {
+	width: 300px;
+	height: 702px;
+	background-color: blue;
+	float: left;
+}*/
+
+#content {
+	/*margin-left: 50px;*/
+	width: 750px;
+	height: 750px;
+	overflow: hidden;
+	/*float: left;*/
+	min-width: 750px;
+	max-width: 1500px;
+	min-height: 750px;
+	max-height: 1500px;
+}
+
+.row {
+	width: 10000px;
+	height: 760px;
+}
+
+.slide {
+	width: 700px;
+	height: 700px;
+	border: black 1px solid;
+	margin-right: 50%;
+	/*float: left;*/
+}
