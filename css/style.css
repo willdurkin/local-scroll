@@ -4,12 +4,23 @@ html, body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	color: white;
+}
+
+#left-rail a{
+	color: white;
+	text-decoration: none;
+	font-family: sans-serif;
+	text-shadow: 2px 2px #333333;
+
 }
 
 #left-rail {
 	position: absolute;
-	top: 100px;
+	top: 80px;
 	left: 40px;
+	color: #fff;
+	/*z-index: 1;*/
 }
 
 #content {
@@ -26,9 +37,52 @@ html, body {
 }
 
 .slide {
+	/*flex: 1;*/
+	display: flex;
 	width: 100vw;
-	
 	height: 100vh;
 	border: black 1px solid;
+	justify-content: center;
 	margin-right: 40px;
+	position: relative;
+}
+
+.slide img {
+	width: 100vw;
+	/*align-self: center;*/
+	overflow: hidden;
+}
+
+.slide p {
+	position: absolute;
+	top: 47.5%;
+	left: auto;
+	font-size: 34px;
+	color: white;
+	font-family: sans-serif;
+}
+
+.slide a {
+	text-decoration: none;
+	font-family: sans-serif;
+	position: absolute;
+	color: white;
+	float: left
+}
+
+.prev {
+	top: 30px;
+	left: 40px;
+	text-shadow: 2px 2px #333333;
+}
+.next {
+	top: 30px;
+	left: 70px;
+	text-shadow: 2px 2px #333333;
+}
+
+.next-first {
+	top: 30px;
+	left: 40px;
+	text-shadow: 2px 2px #333333;
 }
