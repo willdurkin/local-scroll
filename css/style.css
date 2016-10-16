@@ -5,17 +5,14 @@ html, body {
 	justify-content: center;
 	align-items: center;
 	color: white;
-
+	font-family: 'Roboto Slab'
 }
-
-
 
 #left-rail a{
 	color: white;
 	text-decoration: none;
 	font-family: sans-serif;
 	text-shadow: 2px 2px #333333;
-	font-family: sans-serif;
 
 }
 
@@ -24,8 +21,8 @@ html, body {
 	top: 80px;
 	left: 40px;
 	color: #fff;
-	z-index: 1;
-}
+/*	z-index: 1;
+*/}
 
 #content {
 	width: 100vw;
@@ -66,30 +63,22 @@ html, body {
 	top: 47.5%;
 }
 
-.item {
+.page a {
 	color: white;
 	position: absolute;
 	text-decoration: none;
-	font-family: 'sans-serif';
+	font-family: sans-serif;
 }
 
 .prev {
 	top: 30px;
 	left: 40px;
 	text-shadow: 2px 2px #333333;
-	color: white;
-	position: absolute;
-	text-decoration: none;
-	font-family: 'sans-serif';
 }
 .next {
 	top: 30px;
 	left: 70px;
 	text-shadow: 2px 2px #333333;
-	color: white;
-	position: absolute;
-	text-decoration: none;
-	font-family: 'sans-serif';
 }
 
 .next-first {
@@ -104,11 +93,8 @@ html, body {
 	    -moz-animation:spin 4s linear infinite;
 	    animation:spin 4s linear infinite;
 }
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 
-#1a h1 {
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 38px;
-	position: absolute;
-	top: 47.5%;
-	left: auto;
-}
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
