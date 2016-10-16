@@ -46,4 +46,8 @@ $(document).ready(function(){
         console.log('toggle');
     });
 
+    // add sping class
+    $('#1h a').one('click', function() {
+        $('#1h a').addClass('spin');
+    })
 });
