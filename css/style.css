@@ -21,8 +21,8 @@ html, body {
 	top: 80px;
 	left: 40px;
 	color: #fff;
-/*	z-index: 1;
-*/}
+	z-index: 1;
+}
 
 #content {
 	width: 100vw;
@@ -48,9 +48,9 @@ html, body {
 	position: relative;
 }
 
-li img, .bg {
-	width: 100vw;
+.bg {
 	height: 100vh;
+	width: 100vw;
 	overflow: hidden;
 }
 
@@ -142,5 +142,10 @@ a:clicked {
 	margin: auto;
 }
 
+/*Slide f1*/
 
+/*#f1 .bg {
+	bottom: -110px;
+	position: absolute;
+}*/
 
