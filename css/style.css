@@ -61,7 +61,6 @@ li img, .bg {
 	left: 0;
 	height: 100vh;
 	width: 100vw;
-	flex-direction: column;
 	justify-content: center;
 }
 
@@ -112,7 +111,8 @@ a:clicked {
 /*Slide a1*****************/
 
 #a1 .container{
-	
+	flex-direction: column;
+
 }
 
 #title {
@@ -128,15 +128,12 @@ a:clicked {
 #start {
 	margin: auto;
 	padding-bottom: 32%;
-	border: 2px 2px #333333;
 	font-size: 34px;
 }
 
 
 .center {
-	left: auto;
-	position: absolute;
-	top: 47.5%;
+	margin: auto;
 }
 
 /*Slide b1*/
