@@ -1,9 +1,33 @@
 $(document).ready(function(){
-    $(window).one('resize', (function() {
-        alert('please refresh after resizing browser width. you will automatically be returned to your current page')
-        // $("#dialog").dialog();
-        // 'autoOpen': false
-    }));
+    // $(window).one('resize', (function() {
+    //     alert('please refresh after resizing browser width. you will automatically be returned to your current page')
+    //     // $("#dialog").dialog();
+    //     // 'autoOpen': false
+    // }));
+
+    // var upBounce = function(item) {
+    //     $(item).animate({top:+=5}, 1000, 100, bounce(item){})
+    // }
+
+    // $('#start').jqfloat(function() {
+    //     console.log('float');
+    // });
+// next animation
+
+    // $('.next').mouseenter(function() {
+    //     $(this).animate({top:'+=5px'}, 200, 'easeOutBack', function() {
+    //         console.log('bottom');
+    //         $(this).animate({bottom:'+=5px'}, 200, 'easeOutBack', function() {
+    //             console.log('top');
+    //         });    
+    //     });
+    // });
+
+    // function downBounce (item) {
+    //     $(item).animate()
+    // }
+
+    // $('.a1 .next').animate({top:+=5}, 1000, 100, function(){})
 
     jQuery(function( $ ){
             /**

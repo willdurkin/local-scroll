@@ -5,7 +5,7 @@ html, body {
 	justify-content: center;
 	align-items: center;
 	color: white;
-	font-family: 'Roboto Slab'
+	font-family: sans-serif;
 }
 
 #left-rail a{
@@ -27,7 +27,9 @@ html, body {
 #content {
 	width: 100vw;
 	height: 100vh;
+	letter-spacing: 1px;
 	overflow: hidden;
+	font-family: 'Raleway', sans-serif;
 }
 
 .row {
@@ -37,9 +39,7 @@ html, body {
 	flex-direction: row;
 }
 
-.page {
-	/*flex: 1;*/
-	display: flex;
+.slide {
 	width: 100vw;
 	height: 100vh;
 	border: black 1px solid;
@@ -48,53 +48,101 @@ html, body {
 	position: relative;
 }
 
-.page img {
-	/*align-self: center;*/
+li img, .bg {
 	width: 100vw;
+	height: 100vh;
 	overflow: hidden;
 }
 
-.page p {
+.container {
+	position: absolute;
+	display: flex;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+}
+
+/*.container:children {
+	does this work?
+}*/
+
+.text {
 	color: white;
 	font-family: sans-serif;
+	font-size: 24px;
+	text-shadow: 2px 2px #333333;
+	text-decoration: none;
+}
+
+
+
+.content a {
+	color: white;
+	text-decoration: none;
+}
+
+a:clicked {
+	text-decoration: none;
+}
+
+.prev {
+	color: white;
+	position: absolute;
+	top: 30px;
+	left: 40px;
+	text-shadow: 2px 2px #333333;
+		text-decoration: none;
+
+}
+.next {
+	color: white;
+	position: absolute;
+	top: 30px;
+	left: 70px;
+	text-shadow: 2px 2px #333333;
+	text-decoration: none;
+
+}
+
+/*Individual Items********************************/
+
+/*Slide a1*****************/
+
+#a1 .container{
+	flex-direction: column;
+	justify-content: center;
+}
+
+#title {
+	color: white;
+	font-family: 'Bungee Inline', cursive;
+	font-size: 42px;
+	letter-spacing: 2px;
+	margin: auto;
+	padding-top: 280px;
+	
+}
+
+#start {
+	margin: auto;
+	padding-bottom: 370px;
+	border: 2px 2px #333333;
 	font-size: 34px;
+}
+
+
+.center {
 	left: auto;
 	position: absolute;
 	top: 47.5%;
 }
 
-.page a {
-	color: white;
-	position: absolute;
-	text-decoration: none;
-	font-family: sans-serif;
+/*Slide b1*/
+
+#b1 .container p {
+	margin: auto;
 }
 
-.prev {
-	top: 30px;
-	left: 40px;
-	text-shadow: 2px 2px #333333;
-}
-.next {
-	top: 30px;
-	left: 70px;
-	text-shadow: 2px 2px #333333;
-}
 
-.next-first {
-	top: 30px;
-	left: 40px;
-	text-shadow: 2px 2px #333333;
-}
 
-.spin {
-	margin:-60px 0 0 -60px;
-	    -webkit-animation:spin 4s linear infinite;
-	    -moz-animation:spin 4s linear infinite;
-	    animation:spin 4s linear infinite;
-}
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
