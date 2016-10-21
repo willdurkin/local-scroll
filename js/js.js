@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    $("img").unveil(200);
     // $(window).one('resize', (function() {
     //     alert('please refresh after resizing browser width. you will automatically be returned to your current page')
     //     // $("#dialog").dialog();
