@@ -21,7 +21,8 @@ html, body {
 	top: 80px;
 	left: 40px;
 	color: #fff;
-	z-index: 1;
+	/*z-index: 1;*/
+	display: none;
 }
 
 #content {
@@ -106,6 +107,18 @@ a:clicked {
 
 }
 
+.down{
+	-ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+}
+
+.up {
+	-ms-transform: rotate(270deg); /* IE 9 */
+    -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
+    transform: rotate(270deg);
+}
+
 /*Individual Items********************************/
 
 /*Slide a1*****************/
@@ -149,3 +162,18 @@ a:clicked {
 	position: absolute;
 }*/
 
+/*Slide r1*/
+
+#r1 .container {
+	flex-direction: column;
+}
+
+#r1 .container a.down {
+	margin: auto;
+	padding-left: 55%;
+}
+
+#a10 .up {
+	margin: auto;
+	padding-left: 55%;
+}
