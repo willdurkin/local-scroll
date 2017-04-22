@@ -44,6 +44,10 @@ html, body {
 	justify-content: center;
 	margin-right: 40px;
 	position: relative;
+	background-image: url(../images/another-world.gif);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 .bg {
@@ -131,7 +135,7 @@ a:clicked {
 	font-size: 42px;
 	letter-spacing: 2px;
 	margin: auto;
-	padding-top: 25%;
+	padding-bottom: 115px;
 	
 }
 
@@ -173,4 +177,8 @@ a:clicked {
 #a10 .up {
 	margin: auto;
 	padding-left: 55%;
+}
+
+#b1 {
+	background-image: url(../images/akira.gif);
 }

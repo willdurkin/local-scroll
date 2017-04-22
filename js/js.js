@@ -45,7 +45,8 @@ $(document).ready(function(){
             $.localScroll.hash({
                     target: '#content', // Could be a selector or a jQuery object too.
                     queue:true,
-                    duration:1200
+                    duration:1200,
+                    easing: 'easeOutBounce'
             });
             
             /**
